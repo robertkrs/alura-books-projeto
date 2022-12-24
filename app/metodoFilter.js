@@ -5,5 +5,5 @@ function filtrarLivrosDeFront(){
     const elementoBtn = document.getElementById(this.id);
     const categoria = elementoBtn.value;
     let livrosFiltrados = livros.filter(livro => livro.categoria == categoria);
-    console.log(livrosFiltrados);
+    exibirLivrosNaTela(livrosFiltrados);
 }
